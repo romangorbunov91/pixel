@@ -13,17 +13,17 @@
 | **n=1** | m=1, n=1 | m=2, n=1 |
 
 ## Перечень основных файлов
-- pixel.ipynb - основной блокнот с результатами исследований.
-- tensors.py - скрипт построение графиков, соответствующих Figure 4.2 упражнения 4.1.C из [1].
-- pixel_pywt.py - дополнительный скрипт с реализацией упражнения 4.1.C. из [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
+- [pixel.ipynb](pixel.ipynb) - основной блокнот с результатами исследований.
+- [tensors.py](tensors.py) - скрипт построение графиков, соответствующих Figure 4.2 упражнения 4.1.C из [1].
+- [pixel_pywt.py](pixel_pywt.py) - дополнительный скрипт с реализацией упражнения 4.1.C. из [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
 
 ![Figure 4.2](/readme_img/fig_4_2.png)
 
 ## Пользовательские функции
-- split_matrices.py
-- combine_matrices.py
-- mtrxHaar.py
-- vwHaar.py
+- [split_matrices.py](/Functions/split_matrices.py)
+- [combine_matrices.py](/Functions/combine_matrices.py)
+- [mtrxHaar.py](/Functions/mtrxHaar.py)
+- [vwHaar.py](/Functions/vwHaar.py)
 
 ## Примечания
 1. Отличия схем преобразования
