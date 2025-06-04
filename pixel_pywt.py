@@ -2,7 +2,6 @@ import numpy as np
 import pywt
 from Functions.split_matrices import split_matrices
 from matplotlib import pyplot as plt
-from Functions.mtrxHaar import mtrxHaar
 
 N = 128
 K = 2
@@ -14,13 +13,13 @@ vect = 'WV'
 f = np.zeros((N,N))
 
 if vect == 'VW':
-    f[int(3/4*N)-n,(m-1)] = 1
+    f[(3//4*N)-n,(m-1)] = 1
 elif vect == 'VV':
     f[N-n,(m-1)] = 1
 elif vect == 'WW':
-    f[int(3/4*N)-n,int(N/4)+(m-1)] = 1
+    f[(3//4*N)-n,(N//4)+(m-1)] = 1
 elif vect == 'WV':
-    f[N-n,int(N/4)+(m-1)] = 1
+    f[N-n,(N//4)+(m-1)] = 1
 else:
     print('Error: tensor_type is not correct')
 

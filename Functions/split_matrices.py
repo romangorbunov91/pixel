@@ -11,13 +11,5 @@ def split_matrices(matrix):
     cH = matrix[:half_rows, :half_cols]
     cV = matrix[half_rows:, half_cols:]
     cD = matrix[:half_rows, half_cols:]
-    
-    '''
-    # PyWavelet way.
-    cA = matrix[:half_rows, :half_cols]
-    cH = matrix[:half_rows, half_cols:]
-    cV = matrix[half_rows:, :half_cols]
-    cD = matrix[half_rows:, half_cols:]
-    '''
 
     return cA, (cH, cV, cD)
