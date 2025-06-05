@@ -14,7 +14,7 @@
 | **n=2** | m=1, n=2 | m=2, n=2 |
 | **n=1** | m=1, n=1 | m=2, n=1 |
 
-Рассмотренная задача соответствует упражнению 4.1.C. из книги [1].
+Рассмотренная задача соответствует упражнению 4.1.C из книги [1].
 
 <img src='readme_img/fig_4_2.png' alt='Figure 4.2' style='width:60%; height:auto;'>
 
@@ -29,7 +29,7 @@
 ## Перечень основных файлов
 - [pixel.ipynb](pixel.ipynb) - основной блокнот с результатами исследований.
 - [tensors.py](tensors.py) - скрипт построения графиков, соответствующих Figure 4.2 упражнения 4.1.C из книги [1].
-- [pixel_pywt.py](pixel_pywt.py) - скрипт реализации упражнения 4.1.C. из книги [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
+- [pixel_pywt.py](pixel_pywt.py) - скрипт реализации упражнения 4.1.C из книги [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
 
 
 ## Пользовательские функции
