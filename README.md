@@ -16,11 +16,7 @@
 
 В качестве базовой принята схема преобразований из книги [1].
 
-![f_transformed](/readme_img/f_transformed.png){height="36px" width="36px"}
-
-<img src="/readme_img/f_transformed.png" alt="Alt Text" width="300" height="200">
-
-<img src="/readme_img/f_transformed.png" alt="Alt Text" style="width:50%; height:auto;">
+<img src="readme_img/f_transformed.png" alt="Alt Text" style="width:30%; height:auto;">
 
 Эта схема отличается от реализованной в [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
 
