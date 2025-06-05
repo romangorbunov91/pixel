@@ -9,15 +9,15 @@ m = 3
 n = 5
 lvl = 2
 
-vect = 'WV'
+vect = 'WW'
 f = np.zeros((N,N))
 
 if vect == 'VW':
-    f[(3//4*N)-n,(m-1)] = 1
+    f[(3*N//4)-n,(m-1)] = 1
 elif vect == 'VV':
     f[N-n,(m-1)] = 1
 elif vect == 'WW':
-    f[(3//4*N)-n,(N//4)+(m-1)] = 1
+    f[(3*N//4)-n,(N//4)+(m-1)] = 1
 elif vect == 'WV':
     f[N-n,(N//4)+(m-1)] = 1
 else:
@@ -43,5 +43,4 @@ fig, axs = plt.subplots(ncols=K, nrows=1)
 for k, ax in enumerate(axs.flat):
     ax.imshow(inv_tr[k], cmap='gray', interpolation='none')
     ax.set_title('Level ' + str(k))
-    print(inv_tr[k])
 plt.show()

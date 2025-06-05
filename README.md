@@ -14,37 +14,33 @@
 | **n=2** | m=1, n=2 | m=2, n=2 |
 | **n=1** | m=1, n=1 | m=2, n=1 |
 
+Рассмотренная задача соответствует упражнению 4.1.C. из книги [1].
+
+<img src='readme_img/fig_4_2.png' alt='Figure 4.2' style='width:60%; height:auto;'>
+
 В качестве базовой принята схема преобразований из книги [1].
 
-<img src="readme_img/f_transformed.png" alt="Alt Text" style="width:30%; height:auto;">
+<img src='readme_img/f_transformed.png' alt='Alt Text' style='width:20%; height:auto;'>
 
 Эта схема отличается от реализованной в [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
 
-![data layout](/readme_img/layout.png)
+<img src='readme_img/layout.png' alt='PyWavelets data layout' style='width:60%; height:auto;'>
 
 ## Перечень основных файлов
 - [pixel.ipynb](pixel.ipynb) - основной блокнот с результатами исследований.
-- [tensors.py](tensors.py) - скрипт построение графиков, соответствующих Figure 4.2 упражнения 4.1.C из [1].
-- [pixel_pywt.py](pixel_pywt.py) - дополнительный скрипт с реализацией упражнения 4.1.C. из [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
+- [tensors.py](tensors.py) - скрипт построения графиков, соответствующих Figure 4.2 упражнения 4.1.C из книги [1].
+- [pixel_pywt.py](pixel_pywt.py) - скрипт реализации упражнения 4.1.C. из книги [1] с использованием [PyWavelets](https://pywavelets.readthedocs.io/en/latest/)
 
-![Figure 4.2](/readme_img/fig_4_2.png)
 
 ## Пользовательские функции
-- [split_matrices.py](/Functions/split_matrices.py)
-- [combine_matrices.py](/Functions/combine_matrices.py)
-- [mtrxHaar.py](/Functions/mtrxHaar.py)
-- [vwHaar.py](/Functions/vwHaar.py)
+- [split_matrices.py](/Functions/split_matrices.py) - расчленяет исходную матрицу симметрично на 4 составляющие cA, cH, cV, cD, в соответствии со схемой из книги [1].
+- [combine_matrices.py](/Functions/combine_matrices.py) - объединяет cA, cH, cV, cD в единую матрицу в соответствии со схемой из книги [1].
+- [vwHaar.py](/Functions/vwHaar.py) - определяет масштабирующие векторы и вейвлет векторы Хаара-преобразования первого уровня.
+- [mtrxHaar.py](/Functions/mtrxHaar.py) - определяет масштабирующие векторы и вейвлет векторы Хаара-преобразования заданного уровня, используя результаты функции [vwHaar.py](/Functions/vwHaar.py).
+
 
 ## Примечания
-1. Отличия схем преобразования
-
-### Схема преобразований в [1]
-
-
-### Схема преобразований в 
-
-
-2. Результат упражнения 4.1.C из [1] все равно не совпадает с картинкой в части отступов по краям. Вероятно, в [1] вставлен вырезанный фрагмент полной картинки.
+Результат упражнения 4.1.C из [1] все равно не совпадает с картинкой в части отступов по краям. Вероятно, в [1] вставлен вырезанный фрагмент полной картинки.
 
 ## Reference
 1. James S. Walker. A Primer on Wavelets and Their Scientific Applications. 2nd Edition. 2008.
