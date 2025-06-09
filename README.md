@@ -16,11 +16,11 @@
 
 Рассмотренная задача соответствует упражнению 4.1.C из книги [1].
 
-<img src='readme_img/fig_4_2.png' alt='Figure 4.2' style='width:60%; height:auto;'>
+<img src='readme_img/fig_4_2.png' alt='Figure 4.2' style='width:70%; height:auto;'>
 
 Результат тензорного произведения:
 
-<img src='readme_img/tensors.png' alt='User tensors' style='width:60%; height:auto;'>
+<img src='readme_img/tensors.png' alt='User tensors' style='width:70%; height:auto;'>
 
 ## Примечания
 Результат упражнения 4.1.C из книги [1] не совпадает с картинкой в части отступов по краям. Вероятно, в [1] вставлен вырезанный фрагмент полной картинки.
