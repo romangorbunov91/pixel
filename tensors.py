@@ -33,4 +33,5 @@ WVplot = [V3W5, W3W5, V3V5, W3V5]
 fig, axs = plt.subplots(ncols=2, nrows=2)
 for idx, ax in enumerate(axs.flat):
     ax.imshow(WVplot[idx], cmap='gray', interpolation='none', vmin=-0.25, vmax=0.25)
+plt.savefig('readme_img/tensors.png', bbox_inches='tight')
 plt.show()
